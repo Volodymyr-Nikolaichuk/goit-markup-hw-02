@@ -13,6 +13,12 @@
   --accent-color: #2196f3;
   --primary-bgc-color: #f5f5f5;
   --white-color: #ffffff;
+  --black-color: #000000;
+  --background-filter-button: #f5f4fa;
+  --bacground-team: #f5f4fa;
+  --bacground-footer: #2f303a;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --border-card: #eeeeee;
 }
 
 body {
@@ -40,7 +46,7 @@ body {
 }
 
 .logo {
-  color: #000000;
+  color: var(--black-color);
   font-family: Raleway, sans-serif;
   text-decoration: none;
   font-size: 26px;
@@ -87,7 +93,6 @@ body {
 .hero,
 .hero-title {
   color: var(--white-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,24 +130,27 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background: #f5f4fa;
+  background: var(--background-filter-button);
   border: 1px solid transparent;
   border-radius: 4px;
 }
 
 .button-filter:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .button-filter:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
 .button-filter:active {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -183,7 +191,14 @@ body {
 }
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--bacground-team);
+}
+
+.our-team .list-item {
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .second-title {
@@ -218,6 +233,7 @@ body {
 
 .card {
   background-color: var(--white-color);
+  border: 1px solid var(--border-card);
 }
 
 .product {
@@ -234,7 +250,7 @@ body {
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bacground-footer);
 }
 
 .logo-footer {
@@ -255,5 +271,5 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--contacts-footer-color);
 }
