@@ -1,12 +1,3 @@
-/* bgc header #ffffff */
-/* logo text #2196F3 */
-/* bgc #F5F5F5 */
-/* bgc our comand #F5F4FA */
-/* logo text #2196F3 and #000000 */
-/* h1 text #FFFFFF */
-/* nav and h2 text #212121 */
-/* p text #757575 */
-
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -41,9 +32,6 @@ body {
 }
 
 /* Header */
-.header {
-  background-color: var(--white-color);
-}
 
 .logo {
   color: var(--black-color);
@@ -89,6 +77,10 @@ body {
 }
 
 /* Hero */
+
+.hero {
+  background-color: var(--bacground-footer);
+}
 
 .hero,
 .hero-title {
@@ -158,7 +150,6 @@ body {
 /* Benefits */
 .benefits,
 .solution-list {
-  background-color: var(--primary-bgc-color);
 }
 
 .invisible-title {
@@ -191,7 +182,6 @@ body {
 }
 
 .our-team {
-  background-color: var(--bacground-team);
 }
 
 .our-team .list-item {
@@ -225,10 +215,6 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.portfolio-body {
-  background-color: var(--white-color);
 }
 
 .card {
